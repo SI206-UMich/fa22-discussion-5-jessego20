@@ -67,7 +67,10 @@ class TestAllMethods(unittest.TestCase):
 
 	## Check to see whether count_a works
 	def test_count_a(self):
-		pass
+		s1 = 'Hello World'
+		self.assertEqual(count_a(s1), 0, "Testing on string with zero a's")
+		s2 = 'My name is Jesse Goodman'
+		self.assertEqual(count_a(s2), 2, "Testing on string with at least one a")
 
 
 	## Check to see whether you can add an item to the warehouse
